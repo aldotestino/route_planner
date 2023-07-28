@@ -10,3 +10,5 @@ result.rou.xml
 result.sumocfg
 results.json
 vehicle_data.csv
+.idea
+.DS_Store
