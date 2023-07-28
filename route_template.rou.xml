@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-07-08 20:33:03 by Eclipse SUMO netedit Version 1.17.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Routes -->
+    
+        <stop busStop="bs_0" duration="5"/>
+        <stop busStop="bs_1" duration="5"/>
+        <stop busStop="bs_2" duration="5"/>
+    </route>
+    
+    <route id="r_1" edges="E4 E5 29980621#2 30029562#3 30029562#4 30029562#5 30029562#6 30029562#7 398989762#1 -24884042#1 -24884042#0 E1" color="magenta"/>
+    <route id="r_2" edges="E6 29976859#6 24884052#1 24884052#2 29980621#7 29980621#8 -202563239#0 29980616#1 29980616#2 24884052#4 24884052#5 24884052#6 24884052#7 24884052#8 30029586#4" color="magenta"/>
+    <route id="r_3" edges="E9 E8 29975385#0 34573144#0 29975379 E0 29980616#0 29980616#1 29975377#2 29975377#3 29980620#2 29980620#3 29980620#4 24884043#1 24884043#2 24884043#3 24884043#4 68576723#3" color="magenta"/>
+    <route id="r_4" edges="29980620#6 30029562#2 29980621#3 29980621#4 29980621#5 29980637#1 29980637#2 29976859#6 29976859#7 29976859#8 29975387#2 -202563239#1 -202563239#0 29980616#1 29980616#2 29980616#3 68576719#0 24884043#3 24884043#4 24884043#5 24884043#6 1068572560#0 1068572560#1" color="magenta"/>
+
+    <person id="p_0" depart="0.00" color="green">
+        <walk from="E4" busStop="bs_0"/>
+        <ride from="E4" to="E1" busStop="bs_1" lines="vehicle"/>   
+    </person>
+
+    <person id="p_1" depart="0.00" color="magenta">
+        <walk from="E1" busStop="bs_1"/>
+        <ride from="E1" to="48563882#0" busStop="bs_2" lines="vehicle"/>   
+    </person>
+</routes>
