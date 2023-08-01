@@ -65,7 +65,9 @@ algo = ppo.PPO(env=RoutePlanner, config={
     "num_workers": 0
 })
 
-for i in range(40):
+EPOCHS = 100
+
+for i in range(EPOCHS):
     res = algo.train()
     episode_reward_mean = res["episode_reward_mean"];
     print(f"epoch: {i} - episode_reward_mean: {episode_reward_mean}")
@@ -77,7 +79,7 @@ for i in range(40):
 
 
 plt.subplots(figsize=(12, 8))
-plt.plot(list(range(40)), [epoch["episode_reward_mean"] for epoch in results])
+plt.plot(list(range(EPOCHS)), [epoch["episode_reward_mean"] for epoch in results])
 plt.xlabel("epoch")
 plt.ylabel("episode reward mean")
 plt.show()
@@ -152,7 +154,7 @@ while True:
 print(vehicle_df)
 vehicle_df.to_csv("vehicle_data.csv")
 
-persons_ids = vehicle_df["persons"].dropna().str.split(':').explode().unique()
+persons_ids = vehicle_df["persons"].dropna().str.split(':').explode().unique().tolist()
 
 print_data(vehicle_df, preferred_roads.keys(), persons_ids)
 
