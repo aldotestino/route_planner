@@ -1,0 +1,6 @@
+ray[rllib]==2.2
+tensorflow
+gym
+traci
+pandas
+numpy
